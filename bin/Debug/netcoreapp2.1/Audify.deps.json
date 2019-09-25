@@ -24,6 +24,7 @@
     ".NETCoreApp,Version=v2.1": {
       "Audify/1.0.0": {
         "dependencies": {
+          "Ipfs.Core": "0.55.0",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
           "Microsoft.NETCore.App": "2.1.0",
@@ -38,6 +39,27 @@
           "Audify.dll": {}
         }
       },
+      "Common.Logging/3.4.1": {
+        "dependencies": {
+          "Common.Logging.Core": "3.4.1",
+          "Microsoft.CSharp": "4.5.0",
+          "System.Collections": "4.3.0",
+          "System.Diagnostics.Debug": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Threading": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Common.Logging.dll": {
+            "assemblyVersion": "3.4.1.0",
+            "fileVersion": "3.4.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/Common.Logging.dll": {}
+        }
+      },
       "Common.Logging.Core/3.4.1": {
         "dependencies": {
           "Microsoft.CSharp": "4.5.0"
@@ -50,6 +72,39 @@
         },
         "compile": {
           "lib/netstandard1.0/Common.Logging.Core.dll": {}
+        }
+      },
+      "Google.Protobuf/3.8.0": {
+        "dependencies": {
+          "System.Memory": "4.5.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Protobuf.dll": {
+            "assemblyVersion": "3.8.0.0",
+            "fileVersion": "3.8.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Protobuf.dll": {}
+        }
+      },
+      "Ipfs.Core/0.55.0": {
+        "dependencies": {
+          "Common.Logging": "3.4.1",
+          "Common.Logging.Core": "3.4.1",
+          "Google.Protobuf": "3.8.0",
+          "Newtonsoft.Json": "12.0.2",
+          "Portable.BouncyCastle": "1.8.5",
+          "SimpleBase": "1.3.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Ipfs.Core.dll": {
+            "assemblyVersion": "0.55.0.0",
+            "fileVersion": "0.55.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Ipfs.Core.dll": {}
         }
       },
       "Microsoft.AspNetCore.Razor.Design/2.1.2": {},
@@ -105,7 +160,7 @@
       },
       "Microsoft.VisualStudio.Web.CodeGeneration.Contracts/2.1.9": {
         "dependencies": {
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll": {
@@ -121,7 +176,7 @@
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "2.1.1",
           "Microsoft.VisualStudio.Web.CodeGeneration.Templating": "2.1.9",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll": {
@@ -181,7 +236,7 @@
         "dependencies": {
           "Microsoft.CodeAnalysis.CSharp.Workspaces": "2.8.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Contracts": "2.1.9",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.2",
           "NuGet.Frameworks": "4.7.0"
         },
         "runtime": {
@@ -212,8 +267,8 @@
         "dependencies": {
           "Nethereum.Hex": "3.4.0",
           "Nethereum.Util": "3.4.0",
-          "Newtonsoft.Json": "11.0.2",
-          "Portable.BouncyCastle": "1.8.2"
+          "Newtonsoft.Json": "12.0.2",
+          "Portable.BouncyCastle": "1.8.5"
         },
         "runtime": {
           "lib/netcoreapp2.1/Nethereum.ABI.dll": {
@@ -231,8 +286,8 @@
           "Nethereum.RPC": "3.4.0",
           "Nethereum.Signer": "3.4.0",
           "Nethereum.Util": "3.4.0",
-          "Newtonsoft.Json": "11.0.2",
-          "Portable.BouncyCastle": "1.8.2"
+          "Newtonsoft.Json": "12.0.2",
+          "Portable.BouncyCastle": "1.8.5"
         },
         "runtime": {
           "lib/netcoreapp2.1/Nethereum.Accounts.dll": {
@@ -256,8 +311,8 @@
           "Nethereum.RPC": "3.4.0",
           "Nethereum.Signer": "3.4.0",
           "Nethereum.Util": "3.4.0",
-          "Newtonsoft.Json": "11.0.2",
-          "Portable.BouncyCastle": "1.8.2"
+          "Newtonsoft.Json": "12.0.2",
+          "Portable.BouncyCastle": "1.8.5"
         },
         "runtime": {
           "lib/netcoreapp2.1/Nethereum.BlockchainProcessing.dll": {
@@ -274,8 +329,8 @@
           "Nethereum.ABI": "3.4.0",
           "Nethereum.Hex": "3.4.0",
           "Nethereum.RPC": "3.4.0",
-          "Newtonsoft.Json": "11.0.2",
-          "Portable.BouncyCastle": "1.8.2"
+          "Newtonsoft.Json": "12.0.2",
+          "Portable.BouncyCastle": "1.8.5"
         },
         "runtime": {
           "lib/netcoreapp2.1/Nethereum.Contracts.dll": {
@@ -289,8 +344,8 @@
       },
       "Nethereum.Hex/3.4.0": {
         "dependencies": {
-          "Newtonsoft.Json": "11.0.2",
-          "Portable.BouncyCastle": "1.8.2"
+          "Newtonsoft.Json": "12.0.2",
+          "Portable.BouncyCastle": "1.8.5"
         },
         "runtime": {
           "lib/netcoreapp2.1/Nethereum.Hex.dll": {
@@ -305,8 +360,8 @@
       "Nethereum.JsonRpc.Client/3.4.0": {
         "dependencies": {
           "Common.Logging.Core": "3.4.1",
-          "Newtonsoft.Json": "11.0.2",
-          "Portable.BouncyCastle": "1.8.2"
+          "Newtonsoft.Json": "12.0.2",
+          "Portable.BouncyCastle": "1.8.5"
         },
         "runtime": {
           "lib/netcoreapp2.1/Nethereum.JsonRpc.Client.dll": {
@@ -321,8 +376,8 @@
       "Nethereum.JsonRpc.RpcClient/3.4.0": {
         "dependencies": {
           "Nethereum.JsonRpc.Client": "3.4.0",
-          "Newtonsoft.Json": "11.0.2",
-          "Portable.BouncyCastle": "1.8.2"
+          "Newtonsoft.Json": "12.0.2",
+          "Portable.BouncyCastle": "1.8.5"
         },
         "runtime": {
           "lib/netcoreapp2.1/Nethereum.JsonRpc.RpcClient.dll": {
@@ -337,8 +392,8 @@
       "Nethereum.KeyStore/3.4.0": {
         "dependencies": {
           "Nethereum.Hex": "3.4.0",
-          "Newtonsoft.Json": "11.0.2",
-          "Portable.BouncyCastle": "1.8.2"
+          "Newtonsoft.Json": "12.0.2",
+          "Portable.BouncyCastle": "1.8.5"
         },
         "runtime": {
           "lib/netcoreapp2.1/Nethereum.KeyStore.dll": {
@@ -354,8 +409,8 @@
         "dependencies": {
           "Nethereum.RLP": "3.4.0",
           "Nethereum.Util": "3.4.0",
-          "Newtonsoft.Json": "11.0.2",
-          "Portable.BouncyCastle": "1.8.2"
+          "Newtonsoft.Json": "12.0.2",
+          "Portable.BouncyCastle": "1.8.5"
         },
         "runtime": {
           "lib/netcoreapp2.1/Nethereum.Model.dll": {
@@ -370,8 +425,8 @@
       "Nethereum.RLP/3.4.0": {
         "dependencies": {
           "Nethereum.Hex": "3.4.0",
-          "Newtonsoft.Json": "11.0.2",
-          "Portable.BouncyCastle": "1.8.2"
+          "Newtonsoft.Json": "12.0.2",
+          "Portable.BouncyCastle": "1.8.5"
         },
         "runtime": {
           "lib/netcoreapp2.1/Nethereum.RLP.dll": {
@@ -389,8 +444,8 @@
           "Nethereum.JsonRpc.Client": "3.4.0",
           "Nethereum.Model": "3.4.0",
           "Nethereum.Util": "3.4.0",
-          "Newtonsoft.Json": "11.0.2",
-          "Portable.BouncyCastle": "1.8.2"
+          "Newtonsoft.Json": "12.0.2",
+          "Portable.BouncyCastle": "1.8.5"
         },
         "runtime": {
           "lib/netcoreapp2.1/Nethereum.RPC.dll": {
@@ -408,8 +463,8 @@
           "Nethereum.Model": "3.4.0",
           "Nethereum.RLP": "3.4.0",
           "Nethereum.Util": "3.4.0",
-          "Newtonsoft.Json": "11.0.2",
-          "Portable.BouncyCastle": "1.8.2"
+          "Newtonsoft.Json": "12.0.2",
+          "Portable.BouncyCastle": "1.8.5"
         },
         "runtime": {
           "lib/netcoreapp2.1/Nethereum.Signer.dll": {
@@ -425,8 +480,8 @@
         "dependencies": {
           "Nethereum.Hex": "3.4.0",
           "Nethereum.RLP": "3.4.0",
-          "Newtonsoft.Json": "11.0.2",
-          "Portable.BouncyCastle": "1.8.2"
+          "Newtonsoft.Json": "12.0.2",
+          "Portable.BouncyCastle": "1.8.5"
         },
         "runtime": {
           "lib/netcoreapp2.1/Nethereum.Util.dll": {
@@ -450,8 +505,8 @@
           "Nethereum.RPC": "3.4.0",
           "Nethereum.Signer": "3.4.0",
           "Nethereum.Util": "3.4.0",
-          "Newtonsoft.Json": "11.0.2",
-          "Portable.BouncyCastle": "1.8.2"
+          "Newtonsoft.Json": "12.0.2",
+          "Portable.BouncyCastle": "1.8.5"
         },
         "runtime": {
           "lib/netcoreapp2.1/Nethereum.Web3.dll": {
@@ -461,6 +516,17 @@
         },
         "compile": {
           "lib/netcoreapp2.1/Nethereum.Web3.dll": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.2": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.2.23222"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
       "NuGet.Frameworks/4.7.0": {
@@ -477,15 +543,26 @@
           "lib/netstandard1.6/NuGet.Frameworks.dll": {}
         }
       },
-      "Portable.BouncyCastle/1.8.2": {
+      "Portable.BouncyCastle/1.8.5": {
         "runtime": {
           "lib/netstandard2.0/BouncyCastle.Crypto.dll": {
-            "assemblyVersion": "1.8.2.0",
-            "fileVersion": "1.8.2.223"
+            "assemblyVersion": "1.8.5.0",
+            "fileVersion": "1.8.5.50"
           }
         },
         "compile": {
           "lib/netstandard2.0/BouncyCastle.Crypto.dll": {}
+        }
+      },
+      "SimpleBase/1.3.1": {
+        "runtime": {
+          "lib/netstandard1.3/SimpleBase.dll": {
+            "assemblyVersion": "1.3.1.0",
+            "fileVersion": "1.3.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/SimpleBase.dll": {}
         }
       },
       "System.Composition/1.0.31": {
@@ -625,9 +702,10 @@
           "System.Threading.Tasks": "4.3.0"
         }
       },
+      "System.Memory/4.5.2": {},
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
         "dependencies": {
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.2",
           "Newtonsoft.Json.Bson": "1.0.1"
         },
         "compile": {
@@ -907,7 +985,7 @@
       "Microsoft.AspNetCore.Authentication.OAuth/2.1.1": {
         "dependencies": {
           "Microsoft.AspNetCore.Authentication": "2.1.1",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.2"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.OAuth.dll": {}
@@ -1173,7 +1251,7 @@
           "Microsoft.AspNetCore.Http.Connections.Common": "1.0.1",
           "Microsoft.AspNetCore.Routing": "2.1.1",
           "Microsoft.AspNetCore.WebSockets": "2.1.1",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.2"
         },
         "compile": {
           "lib/netcoreapp2.1/Microsoft.AspNetCore.Http.Connections.dll": {}
@@ -1183,7 +1261,7 @@
       "Microsoft.AspNetCore.Http.Connections.Common/1.0.1": {
         "dependencies": {
           "Microsoft.AspNetCore.Connections.Abstractions": "2.1.1",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.2",
           "System.Buffers": "4.5.0"
         },
         "compile": {
@@ -1276,7 +1354,7 @@
       "Microsoft.AspNetCore.JsonPatch/2.1.1": {
         "dependencies": {
           "Microsoft.CSharp": "4.5.0",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.2"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll": {}
@@ -1507,7 +1585,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Hosting.Abstractions": "2.1.1",
           "Microsoft.Extensions.Logging.Console": "2.1.1",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.2"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.AspNetCore.NodeServices.dll": {}
@@ -1640,7 +1718,7 @@
           "Microsoft.Extensions.Options": "2.1.1",
           "System.Buffers": "4.5.0",
           "System.IO.Pipelines": "4.5.0",
-          "System.Memory": "4.5.1",
+          "System.Memory": "4.5.2",
           "System.Numerics.Vectors": "4.5.0",
           "System.Runtime.CompilerServices.Unsafe": "4.5.1",
           "System.Security.Principal.Windows": "4.5.0"
@@ -1671,7 +1749,7 @@
           "Microsoft.Extensions.Logging.Abstractions": "2.1.1",
           "Microsoft.Extensions.Options": "2.1.1",
           "Microsoft.Net.Http.Headers": "2.1.1",
-          "System.Memory": "4.5.1",
+          "System.Memory": "4.5.2",
           "System.Numerics.Vectors": "4.5.0",
           "System.Runtime.CompilerServices.Unsafe": "4.5.1",
           "System.Security.Cryptography.Cng": "4.5.0",
@@ -1739,7 +1817,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Connections.Abstractions": "2.1.1",
           "Microsoft.Extensions.Options": "2.1.1",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.2",
           "System.Buffers": "4.5.0"
         },
         "compile": {
@@ -1765,7 +1843,7 @@
       "Microsoft.AspNetCore.SignalR.Protocols.Json/1.0.1": {
         "dependencies": {
           "Microsoft.AspNetCore.SignalR.Common": "1.0.1",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.2"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {}
@@ -2089,7 +2167,7 @@
         "dependencies": {
           "Microsoft.Extensions.Configuration": "2.1.1",
           "Microsoft.Extensions.Configuration.FileExtensions": "2.1.1",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.2"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.dll": {}
@@ -2144,7 +2222,7 @@
       "Microsoft.Extensions.DependencyModel/2.1.0": {
         "dependencies": {
           "Microsoft.DotNet.PlatformAbstractions": "2.1.0",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.2",
           "System.Diagnostics.Debug": "4.3.0",
           "System.Dynamic.Runtime": "4.3.0",
           "System.Linq": "4.3.0"
@@ -2334,7 +2412,7 @@
       "Microsoft.Extensions.Logging.EventSource/2.1.1": {
         "dependencies": {
           "Microsoft.Extensions.Logging": "2.1.1",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.2"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Logging.EventSource.dll": {}
@@ -2380,7 +2458,7 @@
       },
       "Microsoft.Extensions.Primitives/2.1.1": {
         "dependencies": {
-          "System.Memory": "4.5.1",
+          "System.Memory": "4.5.2",
           "System.Runtime.CompilerServices.Unsafe": "4.5.1"
         },
         "compile": {
@@ -2430,7 +2508,7 @@
         "dependencies": {
           "Microsoft.IdentityModel.Protocols": "5.2.0",
           "NETStandard.Library": "2.0.3",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.2",
           "System.Dynamic.Runtime": "4.3.0",
           "System.IdentityModel.Tokens.Jwt": "5.2.0"
         },
@@ -2456,7 +2534,7 @@
         "dependencies": {
           "Microsoft.IdentityModel.Logging": "5.2.0",
           "NETStandard.Library": "2.0.3",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.2",
           "System.Collections": "4.3.0",
           "System.Diagnostics.Tools": "4.3.0",
           "System.Runtime": "4.3.0",
@@ -2697,16 +2775,10 @@
         },
         "compileOnly": true
       },
-      "Newtonsoft.Json/11.0.2": {
-        "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
-        },
-        "compileOnly": true
-      },
       "Newtonsoft.Json.Bson/1.0.1": {
         "dependencies": {
           "NETStandard.Library": "2.0.3",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.2"
         },
         "compile": {
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
@@ -3014,7 +3086,7 @@
         "dependencies": {
           "Microsoft.IdentityModel.Tokens": "5.2.0",
           "NETStandard.Library": "2.0.3",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.2"
         },
         "compile": {
           "lib/netstandard1.4/System.IdentityModel.Tokens.Jwt.dll": {}
@@ -3128,9 +3200,6 @@
           "System.Resources.ResourceManager": "4.3.0",
           "System.Runtime": "4.3.0"
         },
-        "compileOnly": true
-      },
-      "System.Memory/4.5.1": {
         "compileOnly": true
       },
       "System.Net.Http/4.3.0": {
@@ -3754,12 +3823,33 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Common.Logging/3.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5eZ/vgEOqzLg4PypZqnJ+wMhhgHyckicbZY4iDxqQ4FtOz0CpdYZ0xQ78aszMzeAJZiLLb5VdR9tPfunVQLz6g==",
+      "path": "common.logging/3.4.1",
+      "hashPath": "common.logging.3.4.1.nupkg.sha512"
+    },
     "Common.Logging.Core/3.4.1": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-wLHldZHvxsSD6Ahonfj00/SkfHfKqO+YT6jsUwVm8Rch1REL9IArHAcSLXxYxYfu5/4ydGtmXvOtaH3AkVPu0A==",
       "path": "common.logging.core/3.4.1",
       "hashPath": "common.logging.core.3.4.1.nupkg.sha512"
+    },
+    "Google.Protobuf/3.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BFgHpY9TySZWcC5FWfNio54kBx75VlgLY1uGVyYmn80xUew794FP8YHLrEuf+lEQSYT1IVyigvsAOZv+ZQkf+g==",
+      "path": "google.protobuf/3.8.0",
+      "hashPath": "google.protobuf.3.8.0.nupkg.sha512"
+    },
+    "Ipfs.Core/0.55.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iwq2z80Ae0zoMuJTbnj9TUDCq9xbN91GLdHtlT9MoZoTfenE+Xw425YcZ1rL9j1LwB6nrOBguSVzTfj9fjaUfw==",
+      "path": "ipfs.core/0.55.0",
+      "hashPath": "ipfs.core.0.55.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Razor.Design/2.1.2": {
       "type": "package",
@@ -3943,6 +4033,13 @@
       "path": "nethereum.web3/3.4.0",
       "hashPath": "nethereum.web3.3.4.0.nupkg.sha512"
     },
+    "Newtonsoft.Json/12.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
+      "path": "newtonsoft.json/12.0.2",
+      "hashPath": "newtonsoft.json.12.0.2.nupkg.sha512"
+    },
     "NuGet.Frameworks/4.7.0": {
       "type": "package",
       "serviceable": true,
@@ -3950,12 +4047,19 @@
       "path": "nuget.frameworks/4.7.0",
       "hashPath": "nuget.frameworks.4.7.0.nupkg.sha512"
     },
-    "Portable.BouncyCastle/1.8.2": {
+    "Portable.BouncyCastle/1.8.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-XpJVIhjPiO0o+DU36eeIzqnRilDmE8Z7Kfhm9V9o1yNqM3ikgleD94Z5W/LeEu3t63LaZl2CNJexaix+I6AUMg==",
-      "path": "portable.bouncycastle/1.8.2",
-      "hashPath": "portable.bouncycastle.1.8.2.nupkg.sha512"
+      "sha512": "sha512-EaCgmntbH1sOzemRTqyXSqYjB6pLH7VCYHhhDYZ59guHSD5qPwhIYa7kfy0QUlmTRt9IXhaXdFhNuBUArp70Ng==",
+      "path": "portable.bouncycastle/1.8.5",
+      "hashPath": "portable.bouncycastle.1.8.5.nupkg.sha512"
+    },
+    "SimpleBase/1.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TqqQc+WFg3s10/PdnI2Dio0U7xEmVXhkf+ey4tOGZzjyd054rnNOLNVahJhMYmfBQdS7/jkVqC8xzLm/bkR3EA==",
+      "path": "simplebase/1.3.1",
+      "hashPath": "simplebase.1.3.1.nupkg.sha512"
     },
     "System.Composition/1.0.31": {
       "type": "package",
@@ -4005,6 +4109,13 @@
       "sha512": "sha512-td7x21K8LalpjTWCzW/nQboQIFbq9i0r+PCyBBCdLWWnm4NBcdN18vpz/G9hCpUaCIfRL+ZxJNVTywlNlB1aLQ==",
       "path": "system.linq.parallel/4.3.0",
       "hashPath": "system.linq.parallel.4.3.0.nupkg.sha512"
+    },
+    "System.Memory/4.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fvq1GNmUFwbKv+aLVYYdgu/+gc8Nu9oFujOxIjPrsf+meis9JBzTPDL6aP/eeGOz9yPj6rRLUbOjKMpsMEWpNg==",
+      "path": "system.memory/4.5.2",
+      "hashPath": "system.memory.4.5.2.nupkg.sha512"
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "type": "package",
@@ -5161,13 +5272,6 @@
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
-    "Newtonsoft.Json/11.0.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
-      "path": "newtonsoft.json/11.0.2",
-      "hashPath": "newtonsoft.json.11.0.2.nupkg.sha512"
-    },
     "Newtonsoft.Json.Bson/1.0.1": {
       "type": "package",
       "serviceable": true,
@@ -5538,13 +5642,6 @@
       "sha512": "sha512-Yn/WfYe9RoRfmSLvUt2JerP0BTGGykCZkQPgojaxgzF2N0oPo+/AhB8TXOpdCcNlrG3VRtsamtK2uzsp3cqRVw==",
       "path": "system.linq.queryable/4.0.1",
       "hashPath": "system.linq.queryable.4.0.1.nupkg.sha512"
-    },
-    "System.Memory/4.5.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-sDJYJpGtTgx+23Ayu5euxG5mAXWdkDb4+b0rD0Cab0M1oQS9H0HXGPriKcqpXuiJDTV7fTp/d+fMDJmnr6sNvA==",
-      "path": "system.memory/4.5.1",
-      "hashPath": "system.memory.4.5.1.nupkg.sha512"
     },
     "System.Net.Http/4.3.0": {
       "type": "package",

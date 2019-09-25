@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+
+
 namespace Audify.Model
 {
     public class User
@@ -57,7 +59,14 @@ namespace Audify.Model
         public string ProviderCategoryId { get; set; }
         public string UserId { get; set; }
 
+
     }
+    public class HashStore
+    {
+        public string Id { get; set; }
+        public DateTime Date { get; set; }
+        public string Hash { get; set; }
+   }
     public class Product
     {
         public string Id { get; set; }

@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Security.Claims;
+using System.Text;
 using System.Threading.Tasks;
 using Audify.Model;
+using Audify.Utilities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -57,6 +60,35 @@ namespace Audify.Controllers
             _context.SaveChanges();
             return Ok(trans);
         }
+
+
+        public async Task FinalizeDayTransactionsAsync()
+        {
+            var Trans = _context.Transactions.Where(x => x.TransDay.Date == DateTime.Today);
+            string fileName = $"~/wwwroot/Transactions/{Guid.NewGuid().ToString()}";
+            using (FileStream fs = System.IO.File.Create(fileName))
+            {
+                // Add some text to file    
+                foreach( var item in Trans)
+                {
+                    Byte[] title = new UTF8Encoding(true).GetBytes($"Transaction Record for {DateTime.Today}");
+                    fs.Write(title, 0, title.Length);
+                    byte[] content = new UTF8Encoding(true).GetBytes($"{item.AccountId}\t{item.Amount}\t{item.mode}\t{item.ProductCategoryId}\t{item.ProductId}\t{item.ProviderId}");
+                    fs.Write(content, 0, content.Length);
+                }
+                IPFSHelper h = new IPFSHelper();
+               string x = await  h.UploadIPFSAsync(fileName);
+                var data = new HashStore
+                {
+                    Date = DateTime.Now,
+                    Id = Guid.NewGuid().ToString(),
+                    Hash = x,
+                };
+                _context.HashStores.Add(data);
+                _context.SaveChanges();
+            }
+        }
+
     }
 
 }

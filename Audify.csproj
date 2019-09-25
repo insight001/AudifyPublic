@@ -5,6 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\**" />
+    <Content Remove="Migrations\**" />
+    <EmbeddedResource Remove="Migrations\**" />
+    <None Remove="Migrations\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="wwwroot\Audify-Admin\html\plugins\bower_components\chartist-js\dist\chartist-init.css" />
     <Content Include="wwwroot\Audify-Admin\html\plugins\bower_components\chartist-js\dist\chartist.css" />
     <Content Include="wwwroot\Audify-Admin\html\plugins\bower_components\chartist-js\dist\chartist.min.css" />
@@ -449,6 +456,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Ipfs.Core" Version="0.55.0" />
+    <PackageReference Include="Ipfs.Http.Client" Version="0.33.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.9" />
