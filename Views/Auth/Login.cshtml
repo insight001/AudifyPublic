@@ -1,0 +1,80 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Audify Signin User</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="~/Audify-Admin/assets/fonts/fontawesome/css/fontawesome-all.min.css">
+    <!-- animation css -->
+    <link rel="stylesheet" href="~/Audify-Admin/assets/plugins/animation/css/animate.min.css">
+    <!-- vendor css -->
+    <link rel="stylesheet" href="~/Audify-Admin/assets/css/style.css">
+
+</head>
+<style>
+    .card:hover {
+        background-color: rgb(0,0,170);
+        color: white;
+    }
+
+    .mb-4:hover:hover {
+        color: white;
+    }
+
+    body {
+        background-color: rgb(0,0,70);
+    }
+
+        body:hover {
+            background-color: white;
+        }
+</style>
+<body>
+    <div class="auth-wrapper">
+        <div class="auth-content">
+            <div class="auth-bg">
+                <span class="r"></span>
+                <span class="r s"></span>
+                <span class="r s"></span>
+                <span class="r"></span>
+            </div>
+            <div class="card" style="color:white">
+                <div class="card-body text-center">
+                    <h3 class="mb-4">Login</h3>
+                    <form method="post" action="LoginPost">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Email" name="Username">
+                        </div>
+                        <div class="input-group mb-4">
+                            <input type="password" class="form-control" placeholder="password" name="Password">
+                        </div>
+                        <div class="form-group text-left">
+                            <div class="checkbox checkbox-fill d-inline">
+                                <input type="checkbox" name="checkbox-fill-1" id="checkbox-fill-a1" checked="">
+                              
+                            </div>
+                        </div>
+                        <input class="btn btn-primary shadow-2 mb-4" style="width:40%" type="submit" value="Log In"/>
+                    </form>
+                    <p class="mb-2 text-muted">Forgot password? <a href="#">Reset</a></p>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Required Js -->
+    <script src="~/Audify-Admin/assets/js/vendor-all.min.js"></script>
+    <script src="~/Audify-Admin/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
