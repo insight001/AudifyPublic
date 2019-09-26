@@ -12,7 +12,7 @@ namespace Audify.Controllers
             _context = context;
         }
         [HttpGet]
-        [Route("/")]
+        [Route("Auth/Login")]
         public IActionResult Login()
         {
             return View();

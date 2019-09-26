@@ -25,6 +25,7 @@
       "Audify/1.0.0": {
         "dependencies": {
           "Ipfs.Core": "0.55.0",
+          "Ipfs.Http.Client": "0.33.0",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
           "Microsoft.NETCore.App": "2.1.0",
@@ -105,6 +106,21 @@
         },
         "compile": {
           "lib/netstandard2.0/Ipfs.Core.dll": {}
+        }
+      },
+      "Ipfs.Http.Client/0.33.0": {
+        "dependencies": {
+          "Ipfs.Core": "0.55.0",
+          "Newtonsoft.Json": "12.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Ipfs.Http.Client.dll": {
+            "assemblyVersion": "0.33.0.0",
+            "fileVersion": "0.33.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Ipfs.Http.Client.dll": {}
         }
       },
       "Microsoft.AspNetCore.Razor.Design/2.1.2": {},
@@ -3850,6 +3866,13 @@
       "sha512": "sha512-iwq2z80Ae0zoMuJTbnj9TUDCq9xbN91GLdHtlT9MoZoTfenE+Xw425YcZ1rL9j1LwB6nrOBguSVzTfj9fjaUfw==",
       "path": "ipfs.core/0.55.0",
       "hashPath": "ipfs.core.0.55.0.nupkg.sha512"
+    },
+    "Ipfs.Http.Client/0.33.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-L8N9CEUjukalFy3XWMgCDs8WbhlqXEOd86sY3KWYmKrKRH1x0T/KSc0JMl1zfTNapEN5vzi7C1Am/q4qi2B6BA==",
+      "path": "ipfs.http.client/0.33.0",
+      "hashPath": "ipfs.http.client.0.33.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Razor.Design/2.1.2": {
       "type": "package",
